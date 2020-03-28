@@ -1,0 +1,46 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+main {
+  margin-top: 50px;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+.table th {
+  background: white;
+  position: sticky;
+  height: 49px;
+  top: 0;
+  z-index: 10;
+}
+
+.actions {
+  min-width: 75px;
+}
+
+.white {
+  color: #fff !important;
+}
