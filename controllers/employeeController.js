@@ -3,8 +3,6 @@ const express = require("express");
 const router = express.Router();
 const db = require("../models");
 
-db.Employee.sync();
-
 const parseData = (data) => {
   return data.map(emp => {
     const empStartDate = moment(emp.startDate, 'M/D/YYYY');

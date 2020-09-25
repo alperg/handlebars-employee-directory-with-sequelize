@@ -20,7 +20,8 @@ const routes = require("./controllers/employeeController");
 app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
-app.listen(PORT, () => {
-  // Log (server-side) when our server has started
-  console.log(`Server listening on: http://localhost:${PORT}`);
+db.sequelize.sync().then(() => {
+  app.listen(PORT, () => {
+    console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",PORT, PORT);
+  });
 });
