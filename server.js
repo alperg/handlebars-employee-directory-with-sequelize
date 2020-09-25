@@ -2,6 +2,7 @@ const express = require("express");
 const exphbs = require("express-handlebars");
 
 const PORT = process.env.PORT || 4422;
+const db = require("./models");
 
 const app = express();
 
