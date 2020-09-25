@@ -4,7 +4,7 @@
   "description": "",
   "main": "parser.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "seed": "node db/createSeedData.js",
     "import": "node db/importData.js"
   },
